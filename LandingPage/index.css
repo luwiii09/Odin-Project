@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+body {
+  margin: 0;
+}
 
 .site-navigation,
 .navigation-logo,
@@ -15,11 +20,15 @@
 
 .site-navigation p {
   font-size: 24px;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
+.navigation-logo img {
+  width: 150px;
+}
 .navigation-link {
   justify-content: center;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   align-items: center;
   margin-left: 150px;
 }
@@ -33,4 +42,33 @@
 .navigation-link a {
   text-decoration: none;
   color: white;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 600px;
+  margin: auto;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: white;
+  background-color: #1f2937;
+}
+
+.content-headline {
+  padding-top: 50px;
+  width: 400px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.content-headline p {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.content-wrapper > div:nth-child(2) img {
+  width: 700px;
+  height: auto;
 }
