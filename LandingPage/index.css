@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+.site-navigation,
+.navigation-logo,
+.navigation-link,
+.navigation-link ul {
+  display: flex;
+}
+
+.site-navigation {
+  background-color: #1f2937;
+  color: white;
+  justify-content: space-around;
+}
+
+.site-navigation p {
+  font-size: 24px;
+}
+
+.navigation-link {
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.navigation-link li {
+  font-size: 18px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.navigation-link a {
+  text-decoration: none;
+  color: white;
+}
