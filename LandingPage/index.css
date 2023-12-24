@@ -128,6 +128,51 @@ body {
 }
 
 .content-quote-author {
+  text-align: right;
+  font-weight: bold;
+}
+
+.contact-wrapper {
   display: flex;
-  justify-content: right;
+  background-color: gray;
+  margin: 0;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  display: flex;
+  border-radius: 10px;
+  background-color: #3882f6;
+  padding: 30px;
+}
+
+.contact-text {
+  flex-shrink: 0;
+  margin: 0px 100px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-text > p:nth-child(1) {
+  font-size: 24px;
+}
+
+.contact-button {
+  padding-top: 40px;
+  margin-right: 100px;
+  justify-content: flex-end;
+}
+
+.contact-button button {
+  background-color: #3882f6;
+  width: 150px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+  font-style: bold;
 }
