@@ -111,19 +111,18 @@ body {
   border-radius: 20px;
 }
 
-.content-quote {
-  height: 200px;
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #e5e7eb;
-  justify-content: center;
-  align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 250px;
+  padding-right: 250px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.content-quote p {
-  font-size: 42px;
+.quote-wrapper p {
+  font-size: 36px;
   font-style: italic;
   font-family: 'Lato', sans-serif;
 }
