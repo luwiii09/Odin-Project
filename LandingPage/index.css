@@ -102,6 +102,7 @@ body {
 .picture-with-caption {
   max-width: 350px;
   margin: 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 .picture-with-caption img {
