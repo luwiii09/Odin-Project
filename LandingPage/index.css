@@ -63,6 +63,17 @@ body {
   margin-right: 50px;
 }
 
+.headline-button {
+  background-color: #3882f6;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+  font-style: bold;
+}
+
 .content-headline p {
   opacity: 0.7;
   font-style: italic;
@@ -71,4 +82,31 @@ body {
 .content-wrapper > div:nth-child(2) img {
   width: 700px;
   height: auto;
+}
+
+.content-pictures-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.content-pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture-with-caption {
+  max-width: 350px;
+  margin: 10px;
+}
+
+.picture-with-caption img {
+  width: 300px;
+  height: 200px;
+  border: 5px solid #3882f6;
+  border-radius: 20px;
 }
