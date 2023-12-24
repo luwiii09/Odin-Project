@@ -172,8 +172,21 @@ body {
   height: 50px;
   border: 2px solid white;
   border-radius: 10px;
-  color: white;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 15px;
   font-style: bold;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.content-footer {
+  display: flex;
+  background-color: #1f2937;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
 }
