@@ -3,9 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Rock, Paper, Scissors Game</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+      html,
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        font-family: 'Merriweather Sans', sans-serif;
+      }
+
+      .mainContainer {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        margin: 0;
+        margin-bottom: 50px;
+      }
+
+      .header img {
+        max-width: 100%;
+        max-height: 30vh;
+      }
+
+      .buttonsContainer {
+        display: flex;
+        gap: 10px;
+        width: 80%;
+      }
+
+      .buttonsContainer button {
+        flex: 1;
+        background: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .buttonsContainer button img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      .buttonsContainer button:hover {
+        transform: scale(1.005);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .resultContainer {
+        margin-top: 20px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #f8f8f8;
+        width: 100%;
+        height: 5vh;
+      }
+    </style>
   </head>
   <body>
+    <div class="mainContainer">
+      <header class="header">
+        <h1>Rock, Paper, Scissors</h1>
+        <img src="assets/header.png" alt="rock-paper-scissors header picture" />
+      </header>
+      <section class="buttonsContainer">
+        <button id="rock"><img src="assets/rock.png" alt="rock" /></button>
+        <button id="paper"><img src="assets/paper.png" alt="paper" /></button>
+        <button id="scissors">
+          <img src="assets/scissors.png" alt="scissors" />
+        </button>
+      </section>
+      <section id="resultContainer">
+        <div id="result"></div>
+      </section>
+    </div>
+    <footer><p>Rock, Paper, Scissors by: luwiii</p></footer>
     <script src="index.js"></script>
   </body>
 </html>

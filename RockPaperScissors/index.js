@@ -1,68 +1,80 @@
-//Step 1
-console.log('Game!');
-
-//Step 4
 let humanScore = 0;
 let computerScore = 0;
 
-//Step 2
+document.querySelector('#rock').addEventListener('click', () => {
+  playRound('Rock', getComputerChoice());
+});
+
+document.querySelector('#paper').addEventListener('click', () => {
+  playRound('Paper', getComputerChoice());
+});
+
+document.querySelector('#scissors').addEventListener('click', () => {
+  playRound('Scissors', getComputerChoice());
+});
+
 function getComputerChoice() {
-  const computerChoice = ['rock', 'paper', 'scissors'];
+  const computerChoice = ['Rock', 'Paper', 'Scissors'];
   let randomChoice = Math.floor(Math.random() * 3);
   return computerChoice[randomChoice];
 }
 
-//Step 3
-function getHumanChoice() {
-  let humanChoice = prompt('Rock, Paper, Scissors?').toLowerCase();
-  const validHumanChoice = ['rock', 'paper', 'scissors'];
+const resultContainer = document.querySelector('#resultContainer');
+resultContainer.setAttribute(
+  'style',
+  'margin-top: 10px; font-size: 25px; font-family: "Raleway", sans-serif;'
+);
+const roundResult = document.createElement('div');
+roundResult.setAttribute(
+  'style',
+  'textAlign: center; padding: 10px; font-size: 25px'
+);
 
-  while (!validHumanChoice.includes(humanChoice)) {
-    humanChoice = prompt(
-      'Invalid choice. Please enter Rock, Paper, Scissors'
-    ).toLowerCase();
-  }
-  return humanChoice;
+resultContainer.appendChild(roundResult);
+
+function tieChoice(humanChoice, computerChoice) {
+  roundResult.textContent = `It is a tie! Player: ${humanChoice} v Computer: ${computerChoice}`;
 }
 
-//Step 5
+function playerWin(humanChoice, computerChoice) {
+  roundResult.textContent = `Computer win! Player: ${humanChoice} v Computer: ${computerChoice}`;
+}
+
+function computerWin(humanChoice, computerChoice) {
+  roundResult.textContent = `Computer win! Player: ${humanChoice} v Computer: ${computerChoice}`;
+}
+
 function playRound(humanChoice, computerChoice) {
+  const result = document.querySelector('#result');
+  result.style.textAlign = 'center';
+
   if (humanChoice === computerChoice) {
-    console.log('It is a tie!');
+    tieChoice(humanChoice, computerChoice);
   } else if (
-    (humanChoice === 'rock' && computerChoice === 'scissors') ||
-    (humanChoice === 'paper' && computerChoice === 'rock') ||
-    (humanChoice === 'scissors' && computerChoice === 'paper')
+    (humanChoice === 'Rock' && computerChoice === 'Scissors') ||
+    (humanChoice === 'Paper' && computerChoice === 'Rock') ||
+    (humanChoice === 'Scissors' && computerChoice === 'Paper')
   ) {
     humanScore++;
-    console.log('Player win!');
+    playerWin(humanChoice, computerChoice);
   } else {
     computerScore++;
-    console.log('Computer win!');
+    computerWin(humanChoice, computerChoice);
+  }
+
+  result.textContent = `\nYour score: ${humanScore} v Computer score: ${computerScore}.`;
+  if (humanScore === 5) {
+    result.textContent = `\nCongratulations! You won the game!`;
+    setTimeout(resetGame, 3000);
+  } else if (computerScore === 5) {
+    result.textContent = `\nNice try! The computer won the game!`;
+    setTimeout(resetGame, 3000);
   }
 }
 
-//Step 6
-function playGame() {
-  for (let i = 1; i <= 5; i++) {
-    console.log(`Round ${i}`);
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection);
-    console.log(`Scores: Player: ${humanScore} v Computer: ${computerScore}`);
-  }
-
-  if (humanScore > computerScore) {
-    console.log('The player wins the game!');
-  } else if (computerScore > humanScore) {
-    console.log('The computer wins the game!');
-  } else {
-    console.log('The BO5 game results are tied!');
-  }
-
-  console.log(
-    `Final score: Player: ${humanScore} v Computer: ${computerScore}`
-  );
+function resetGame() {
+  humanScore = 0;
+  computerScore = 0;
+  const result = document.querySelector('#result');
+  result.textContent = "Game reset. Let's play again!";
 }
-
-playGame();
