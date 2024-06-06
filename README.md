@@ -6,7 +6,7 @@ Welcome to my repository documenting my journey through The Odin Project's Funda
 
 # Projects
 
-- [ ] Landing Page
+- [x] Landing Page
 - [x] Rock Paper Scissors
 - [ ] Etch-a-Sketch
 - [ ] Calculator
