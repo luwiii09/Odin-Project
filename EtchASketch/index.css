@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #f2f1eb;
+}
+
+.mainContainer h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.resetButton {
+  margin-bottom: 50px;
+  padding: 5px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #afc8ad;
+}
+
+.sketchContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+}
+
+.sketchContainer .cell {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: white;
+}
