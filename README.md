@@ -6,9 +6,9 @@ Welcome to my repository documenting my journey through The Odin Project's Funda
 
 # Projects
 
-- [x] Landing Page
-- [x] Rock Paper Scissors
-- [x] Etch-a-Sketch
+- [x] [Landing Page](https://luwiii09.github.io/Odin-Project/LandingPage/)
+- [x] [Rock Paper Scissors](https://luwiii09.github.io/Odin-Project/RockPaperScissors/)
+- [x] [Etch-a-Sketch](https://luwiii09.github.io/Odin-Project/EtchASketch/)
 - [ ] Calculator
 
 ## Technologies Used
@@ -25,5 +25,5 @@ For any suggestions or inquiries about my code, feel free to explore and reach o
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: hansgantong09@gmail.com
+- **Email**: [hansgantong09@gmail.com](mailto://hansgantong09@gmail.com)
 - **GitHub**: [luwiii09](https://github.com/luwiii09)
