@@ -9,7 +9,7 @@ Welcome to my repository documenting my journey through The Odin Project's Funda
 - [x] [Landing Page](https://luwiii09.github.io/Odin-Project/LandingPage/)
 - [x] [Rock Paper Scissors](https://luwiii09.github.io/Odin-Project/RockPaperScissors/)
 - [x] [Etch-a-Sketch](https://luwiii09.github.io/Odin-Project/EtchASketch/)
-- [ ] Calculator
+- [x] [Calculator] (https://luwiii09.github.io/Odin-Project/Calculator/)
 
 ## Technologies Used
 
